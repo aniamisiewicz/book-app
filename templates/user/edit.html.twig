@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{'edit' |trans}}{% endblock %}
+
+{% block body %}
+<div class="my-page">   
+    <h1 class="is-size-3">{{'edit' |trans}}</h1>
+
+    {{ include('user/_modal.html.twig', {'action': 'app_user_delete', 'id': user.id}) }}
+    {{ include('user/_formEdit.html.twig', {'button_label': 'update' |trans}) }}
+
+     <a class="form-button button is-link" href="{{ path('app_user_index') }}">{{'back' |trans}}</a>
+     {% if user.id != app.user.id %}
+     <button class="form-button button is-danger modal-button" data-target="modal-user">
+        {{'delete' |trans }}
+    </button>
+    {% endif %}
+</div>
+{% endblock %}

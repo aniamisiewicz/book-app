@@ -1,0 +1,3 @@
+# app/config/parameters.yml
+parameters:
+    router.request_context.base_url: webservice/

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="global" datatype="plaintext" source-language="en">
+        <body>
+            <trans-unit id="email.notempty">
+                <source>email.notempty</source>
+                <target>Email cannot be empty</target>
+            </trans-unit>
+            <trans-unit id="email.used">
+                <source>email.used</source>
+                <target>This email is already in use</target>
+            </trans-unit>
+            <trans-unit id="email.valid">
+                <source>email.valid</source>
+                <target>This email has to be valid email</target>
+            </trans-unit>
+            <trans-unit id="name.notempty">
+                <source>name.notempty</source>
+                <target>Name cannot be empty</target>
+            </trans-unit>
+            <trans-unit id="password.notempty">
+                <source>password.notempty</source>
+                <target>Password cannot be empty</target>
+            </trans-unit>
+            <trans-unit id="title.notempty">
+                <source>title.notempty</source>
+                <target>Title cannot be empty</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

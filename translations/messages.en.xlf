@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="global" datatype="plaintext" source-language="en">
+    <body>
+    <trans-unit id="no.records">
+        <source>no.records</source>
+        <target>No records Found</target>
+      </trans-unit>
+      <trans-unit id="books">
+        <source>books</source>
+        <target>Books</target>
+      </trans-unit>
+      <trans-unit id="save">
+        <source>save</source>
+        <target>Save</target>
+      </trans-unit>
+       <trans-unit id="categories">
+        <source>categories</source>
+        <target>Categories</target>
+      </trans-unit>
+       <trans-unit id="header.signup">
+        <source>header.signup</source>
+        <target>Sign up</target>
+      </trans-unit>
+       <trans-unit id="header.login">
+        <source>header.login</source>
+        <target>Log in</target>
+      </trans-unit>
+      <trans-unit id="logout">
+        <source>logout</source>
+        <target>Logout</target>
+      </trans-unit>
+       <trans-unit id="book.deletion">
+        <source>book.deletion</source>
+        <target>Book deletion</target>
+      </trans-unit>
+      <trans-unit id="book.deletion.confirmation">
+        <source>book.deletion.confirmation</source>
+        <target>You are about to delete a book!</target>
+      </trans-unit>
+      <trans-unit id="delete">
+        <source>delete</source>
+        <target>Delete</target>
+      </trans-unit>
+      <trans-unit id="cancel">
+        <source>cancel</source>
+        <target>Cancel</target>
+      </trans-unit>
+      <trans-unit id="edit">
+        <source>edit</source>
+        <target>Edit</target>
+      </trans-unit>
+      <trans-unit id="back">
+        <source>back</source>
+        <target>Back to list</target>
+      </trans-unit>
+      <trans-unit id="category.deletion">
+        <source>category.deletion</source>
+        <target>Category deletion</target>
+      </trans-unit>
+      <trans-unit id="category.deletion.confirmation">
+        <source>category.deletion.confirmation</source>
+        <target>You are about to delete a category!</target>
+      </trans-unit>
+      <trans-unit id="user.deletion">
+        <source>user.deletion</source>
+        <target>user deletion</target>
+      </trans-unit>
+      <trans-unit id="user.deletion.confirmation">
+        <source>user.deletion.confirmation</source>
+        <target>You are about to delete a user!</target>
+      </trans-unit>
+      <trans-unit id="comment.deletion">
+        <source>comment.deletion</source>
+        <target>Comment deletion</target>
+      </trans-unit>
+      <trans-unit id="comment.deletion.confirmation">
+        <source>comment.deletion.confirmation</source>
+        <target>You are about to delete a comment!</target>
+      </trans-unit>
+      <trans-unit id="update">
+        <source>update</source>
+        <target>Update</target>
+      </trans-unit>
+      <trans-unit id="book.create">
+        <source>book.create</source>
+        <target>Create a new book</target>
+      </trans-unit>
+      <trans-unit id="category.create">
+        <source>category.create</source>
+        <target>Create a new category</target>
+      </trans-unit>
+      <trans-unit id="show">
+        <source>show</source>
+        <target>Show</target>
+      </trans-unit>
+      <trans-unit id="actions">
+        <source>actions</source>
+        <target>Actions</target>
+      </trans-unit>
+      <trans-unit id="book">
+        <source>book</source>
+        <target>Book</target>
+      </trans-unit>
+      <trans-unit id="title">
+        <source>title</source>
+        <target>Title</target>
+      </trans-unit>
+      <trans-unit id="author">
+        <source>author</source>
+        <target>Author</target>
+      </trans-unit>
+      <trans-unit id="created.at">
+        <source>created.at</source>
+        <target>Created at</target>
+      </trans-unit>
+      <trans-unit id="nick">
+        <source>nick</source>
+        <target>Nick</target>
+      </trans-unit>
+      <trans-unit id="content">
+        <source>content</source>
+        <target>Content</target>
+      </trans-unit>
+      <trans-unit id="books.category">
+        <source>books.category</source>
+        <target>Books for category</target>
+      </trans-unit>
+      <trans-unit id="password">
+        <source>password</source>
+        <target>Password</target>
+      </trans-unit>
+      <trans-unit id="logged.as">
+        <source>logged.as</source>
+        <target>You're logged in as</target>
+      </trans-unit>
+      <trans-unit id="user.new">
+        <source>user.new</source>
+        <target>Create new user</target>
+      </trans-unit>
+      <trans-unit id="name">
+        <source>name</source>
+        <target>Name</target>
+      </trans-unit>
+      <trans-unit id="role">
+        <source>role</source>
+        <target>Role</target>
+      </trans-unit>
+      <trans-unit id="manage">
+        <source>manage</source>
+        <target>Manage Users</target>
+      </trans-unit>
+      <trans-unit id="user">
+        <source>user</source>
+        <target>User</target>
+      </trans-unit>
+      <trans-unit id="roles">
+        <source>roles</source>
+        <target>Roles</target>
+      </trans-unit>
+      <trans-unit id="users">
+        <source>users</source>
+        <target>Users</target>
+      </trans-unit>
+      <trans-unit id="book.deleted">
+        <source>book.deleted</source>
+        <target>Book deleted</target>
+      </trans-unit>
+      <trans-unit id="category.deleted">
+        <source>category.deleted</source>
+        <target>Category deleted</target>
+      </trans-unit>
+      <trans-unit id="category.warning">
+        <source>category.warning</source>
+        <target>Category contains books, it cannot be deleted</target>
+      </trans-unit>
+      <trans-unit id="comment.deleted">
+        <source>comment.deleted</source>
+        <target>Comment deleted</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

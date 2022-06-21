@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{'user' |trans }}{% endblock %}
+
+{% block body %}
+<div class="my-page">
+    <h1 class="is-size-3">{{'user' |trans }}</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ user.id }}</td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td>{{ user.email }}</td>
+            </tr>
+            <tr>
+                <th>{{'roles' |trans}}</th>
+                <td>{{ user.roles|join(', ') |replace({'ROLE_ADMIN': 'Admin', 'ROLE_USER': "User"}) }}</td>
+            </tr>
+            <tr>
+                <th>{{'password' |trans}}</th>
+                <td>{{ user.password }}</td>
+            </tr>
+            <tr>
+                <th>{{'name' |trans}}</th>
+                <td>{{ user.name }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a class="form-button button is-primary" href="{{ path('app_user_index') }}">{{'back' |trans}}</a>
+
+    <a class="form-button button is-link" href="{{ path('app_user_edit', {'id': user.id}) }}">{{'edit' |trans}}</a>
+
+    
+{% endblock %}

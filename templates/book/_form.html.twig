@@ -1,0 +1,23 @@
+{{ form_start(form) }}
+    <div class="form-row">
+        <div class="col">
+                {{ 'title' |trans }}
+                {{ form_widget(form.title) }}
+                {{ form_errors(form.title) }}
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="col">
+                {{ 'author' |trans }}
+                {{ form_widget(form.author) }}
+                {{ form_errors(form.author) }}
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="col">
+                {{ 'categories' |trans }}
+                {{ form_widget(form.category) }}
+        </div>
+    </div>
+    <button class="form-button button is-primary">{{ button_label|default('save' |trans) }}</button>
+{{ form_end(form) }}

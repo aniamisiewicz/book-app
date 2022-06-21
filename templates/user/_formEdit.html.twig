@@ -1,0 +1,12 @@
+{{ form_start(form) }}
+    <div class="form-row">
+        <div class="col">
+                {{ 'password'|trans  }}
+                {{ form_widget(form.plainPassword) }}
+                {{ form_errors(form.plainPassword) }}
+        </div>
+    </div>
+    <button class="form-button button is-primary" >{{ button_label|default('save'|trans) }}</button>
+    
+
+{{ form_end(form) }}

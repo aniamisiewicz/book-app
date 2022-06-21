@@ -1,0 +1,51 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ 'categories'|trans }}{% endblock %}
+
+{% block body %}
+<div class="my-page">
+
+    <h1 class="is-size-3">{{ 'categories'|trans }}</h1>
+
+       {% if pagination is defined and pagination.items|length %}
+    <table class="table">
+        <thead>
+             <tr>
+                <th>{{ knp_pagination_sortable(pagination, 'Id', 'category.id') }}</th>
+                <th>{{ knp_pagination_sortable(pagination, 'name'|trans, 'category.name') }}</th>
+                <th>{{ 'actions'|trans }}</th>
+            </tr>
+        </thead>
+        <tbody>
+           {% for category in pagination.items %}
+                <tr>
+                    <td>{{ category.id }}</td>
+                    <td>{{ category.name }}</td>
+                    <td>
+                        <a class="button is-primary is-light" href="{{ path('app_category_show', {'id': category.id}) }}">{{ 'show'|trans }}</a>
+                         {% if is_granted('ROLE_ADMIN') %}
+                             <a class="button is-link is-light" href="{{ path('app_category_edit', {'id': category.id}) }}">{{ 'edit'|trans }}</a>
+                             <a class="button is-link is-light" href="{{ url('category_delete', {'id': category.id}) }}"  title="{{ 'delete'|trans }}">
+                            {{ 'delete'|trans }}
+                         </a>
+                         {% endif %}
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <div class="navigation text-center">
+        {{ knp_pagination_render(pagination) }}
+    </div>
+     {% if is_granted('ROLE_ADMIN') %}
+    <a class="button is-primary" href="{{ path('app_category_new') }}">{{ 'category.create'|trans }}</a>
+
+    {% endif %}
+      {% else %}
+        <tr>
+            <td colspan="3">{{ 'no.records'|trans }}</td>
+        </tr>
+    {% endif %}
+</div>
+{% endblock %}

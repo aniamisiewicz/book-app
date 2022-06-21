@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ 'categories'|trans }}{% endblock %}
+
+{% block body %}
+<div class="my-page">
+    <h1 class="subtitle is-3">{{ 'books.category'|trans }} {{ category.name }}</h1>
+
+    <a href="{{ url('app_book_index', {'filters.category_id' : category.id}) }}" title="Pokaż książki dla kategorii">
+           Pokaż książki dla kategorii
+    </a>
+
+    <a class="button is-primary" href="{{ path('app_category_index') }}">{{ 'back'|trans }}</a>
+</div>
+{% endblock %}

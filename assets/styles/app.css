@@ -1,0 +1,56 @@
+body {
+  background-color: transparent;
+}
+
+.my-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 90vh;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.my-page form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 320px;
+}
+
+form .form-input {
+  margin: 16px 0;
+}
+
+.form-row {
+  margin: 4px 0;
+}
+
+.form-button {
+  margin-top: 8px;
+}
+
+.form-row ul li {
+  color: red;
+}
+
+.form-back {
+  margin-top: 8px;
+}
+
+.modal-cancel {
+  margin-left: 8px;
+}
+
+.comment {
+  margin-top: 16px;
+}
+
+.page {
+  margin: 8px;
+}

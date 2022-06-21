@@ -1,0 +1,85 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ 'book'|trans }}{% endblock %}
+
+{% block body %}
+<div class="my-page">
+    <h1 class="is-size-3">{{ 'book'|trans }}</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ book.id }}</td>
+            </tr>
+            <tr>
+                <th>{{ 'title'|trans }}</th>
+                <td>{{ book.title }}</td>
+            </tr>
+            <tr>
+                <th>{{ 'author'|trans }}</th>
+                <td>{{ book.author }}</td>
+            </tr>
+            <tr>
+                <th>{{ 'categories'|trans }}</th>
+                <td>{{ book.getCategoryName() }}</td>
+            </tr>
+            <tr>
+                <th>{{ 'created.at'|trans }}</th>
+                <td>{{ book.createdAt|format_date('long') }}</td>
+            </tr>
+        </tbody>
+    </table>
+     {% if is_granted('ROLE_ADMIN') %}
+        <a class="form-button button is-primary" href="{{ path('app_book_edit', {'id': book.id}) }}">{{ 'edit'|trans }}
+     </a>
+     {% endif %}
+    <a class="form-button button is-link" href="{{ path('app_book_index') }}">{{ 'back'|trans }}</a>
+
+    {% for comment in comments %}
+        <article class="message comment">
+            <div class="message-header">
+                <p>{{ comment.getEmail() }}</p>
+                <p>({{ comment.getNick() }})</p>
+                {% if is_granted('ROLE_ADMIN') %}
+                    <form  action="{{ path('comment_delete', {'id': comment.id}) }}">
+                        <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ comment.id) }}">
+                        <button class="delete"></button>
+                    </form>
+                    </button>
+                {% endif %}
+            </div>
+            <div class="message-body">
+                {{ comment.getContent() }}
+            </div>
+        </article>
+    {% endfor %}
+
+{{ form_start(form, {'attr': {'novalidate': 'novalidate'}}) }}
+    {% if not is_granted('ROLE_ADMIN') %}
+    <div class="form-row">
+        <div class="col">
+                {{ form_label(form.email) }}
+                {{ form_widget(form.email) }}
+                {{ form_errors(form.email) }}
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="col">
+                {{ 'nick' |trans }}
+                {{ form_widget(form.nick) }}
+                {{ form_errors(form.nick) }}
+        </div>
+    </div>
+    {% endif %}
+    <div class="form-row">
+        <div class="col">
+                {{ 'content' |trans }}
+                {{ form_widget(form.content) }}
+                {{ form_errors(form.content) }}
+        </div>
+    </div>
+    <button class="form-button button is-primary">{{ button_label|default('save' |trans) }}</button>
+{{ form_end(form) }}
+</div>
+{% endblock %}

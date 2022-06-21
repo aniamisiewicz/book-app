@@ -1,0 +1,23 @@
+<div id="modal-user" class="modal">
+  <div class="modal-background"></div>
+  <div class="modal-card">
+    <header class="modal-card-head">
+      <p class="modal-card-title">{{ 'user.deletion'|trans }}</p>
+      <button class="delete" aria-label="close"></button>
+    </header>
+    <section class="modal-card-body">
+        <article class="message is-danger">
+        <div class="message-body">
+          {{ 'user.deletion.confirmation' |trans }}
+        </div>
+      </article>
+    </section>
+    <footer class="modal-card-foot">
+      <form method="post" action="{{ path(action, {'id': id}) }}">
+          <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ user.id) }}">
+          <button class="button is-danger">{{'delete' |trans }}</button>
+      </form>
+      <button class="button modal-cancel">{{'cancel' |trans }}</button>
+    </footer>
+  </div>
+</div>

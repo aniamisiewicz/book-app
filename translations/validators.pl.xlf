@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="global" datatype="plaintext" source-language="en" target-language="pl">
+        <body>
+            <trans-unit id="email.notempty">
+                <source>email.notempty</source>
+                <target>Email nie moze byc pusty</target>
+            </trans-unit>
+            <trans-unit id="email.used">
+                <source>email.used</source>
+                <target>Ten email jest juz w systemie</target>
+            </trans-unit>
+            <trans-unit id="email.valid">
+                <source>email.valid</source>
+                <target>Email musi byc poprawnym mailem</target>
+            </trans-unit>
+            <trans-unit id="name.notempty">
+                <source>name.notempty</source>
+                <target>Nick nie moze byc pusty</target>
+            </trans-unit>
+            <trans-unit id="password.notempty">
+                <source>password.notempty</source>
+                <target>Haslo nie moze byc puste</target>
+            </trans-unit>
+            <trans-unit id="author.notempty">
+                <source>author.notempty</source>
+                <target>Autor nie moze byc pusty</target>
+            </trans-unit>
+            <trans-unit id="title.notempty">
+                <source>title.notempty</source>
+                <target>Tytul nie moze byc pusty</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

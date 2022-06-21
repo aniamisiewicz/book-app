@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="global" datatype="plaintext" source-language="en" target-language="pl">
+    <body>
+      <trans-unit id="books">
+        <source>books</source>
+        <target>Ksiazki</target>
+      </trans-unit>
+      <trans-unit id="categories">
+        <source>categories</source>
+        <target>Kategorie</target>
+      </trans-unit>
+      <trans-unit id="header.signup">
+        <source>header.signup</source>
+        <target>Rejestracja</target>
+      </trans-unit>
+      <trans-unit id="header.login">
+        <source>header.login</source>
+        <target>Logowanie</target>
+      </trans-unit>
+      <trans-unit id="logout">
+        <source>logout</source>
+        <target>Wyloguj</target>
+      </trans-unit>
+      <trans-unit id="book.deletion">
+        <source>book.deletion</source>
+        <target>Usuwanie ksiazki</target>
+      </trans-unit>
+      <trans-unit id="book.deletion.confirmation">
+        <source>book.deletion.confirmation</source>
+        <target>Masz zamiar usunac ksiazke</target>
+      </trans-unit>
+      <trans-unit id="delete">
+        <source>delete</source>
+        <target>Usun</target>
+      </trans-unit>
+      <trans-unit id="cancel">
+        <source>cancel</source>
+        <target>Anuluj</target>
+      </trans-unit>
+      <trans-unit id="edit">
+        <source>edit</source>
+        <target>Edytuj</target>
+      </trans-unit>
+      <trans-unit id="back">
+        <source>back</source>
+        <target>Wroc do listy</target>
+      </trans-unit>
+      <trans-unit id="category.deletion">
+        <source>category.deletion</source>
+        <target>Usuwanie kategorii</target>
+      </trans-unit>
+      <trans-unit id="category.deletion.confirmation">
+        <source>category.deletion.confirmation</source>
+        <target>Masz zamiar usunac kategorie</target>
+      </trans-unit>
+      <trans-unit id="user.deletion">
+        <source>user.deletion</source>
+        <target>Usuwanie uzytkownika</target>
+      </trans-unit>
+      <trans-unit id="user.deletion.confirmation">
+        <source>user.deletion.confirmation</source>
+        <target>Masz zamiar usunac uzytkownika</target>
+      </trans-unit>
+      <trans-unit id="comment.deletion">
+        <source>comment.deletion</source>
+        <target>Usuwanie komentarza</target>
+      </trans-unit>
+      <trans-unit id="comment.deletion.confirmation">
+        <source>comment.deletion.confirmation</source>
+        <target>Masz zamiar usunac komentarz</target>
+      </trans-unit>
+      <trans-unit id="update">
+        <source>update</source>
+        <target>Aktualizuj</target>
+      </trans-unit>
+      <trans-unit id="book.create">
+        <source>book.create</source>
+        <target>Utworz nowa ksiazke</target>
+      </trans-unit>
+      <trans-unit id="category.create">
+        <source>category.create</source>
+        <target>Utworz nowa kategorie</target>
+      </trans-unit>
+      <trans-unit id="show">
+        <source>show</source>
+        <target>Pokaz</target>
+      </trans-unit>
+      <trans-unit id="actions">
+        <source>actions</source>
+        <target>Akcje</target>
+      </trans-unit>
+      <trans-unit id="book">
+        <source>book</source>
+        <target>Ksiazka</target>
+      </trans-unit>
+      <trans-unit id="title">
+        <source>title</source>
+        <target>Tytul</target>
+      </trans-unit>
+      <trans-unit id="author">
+        <source>author</source>
+        <target>Autor </target>
+      </trans-unit>
+      <trans-unit id="created.at">
+        <source>created.at</source>
+        <target>Data utworzenia</target>
+      </trans-unit>
+      <trans-unit id="nick">
+        <source>nick</source>
+        <target>Nazwa uzytkownika</target>
+      </trans-unit>
+      <trans-unit id="content">
+        <source>content</source>
+        <target>Tresc</target>
+      </trans-unit>
+      <trans-unit id="save">
+        <source>save</source>
+        <target>Zapisz</target>
+      </trans-unit>
+      <trans-unit id="books.category">
+        <source>books.category</source>
+        <target>Ksiazki dla kategorii </target>
+      </trans-unit>
+       <trans-unit id="password">
+        <source>password</source>
+        <target>Haslo </target>
+      </trans-unit>
+      <trans-unit id="logged.as">
+        <source>logged.as</source>
+        <target>Jestes zalogowany jako </target>
+      </trans-unit>
+      <trans-unit id="user.new">
+        <source>user.new</source>
+        <target>Stworz nowego uzytkownika </target>
+      </trans-unit>
+      <trans-unit id="name">
+        <source>name</source>
+        <target>Nazwa</target>
+      </trans-unit>
+      <trans-unit id="role">
+        <source>role</source>
+        <target>Rola</target>
+      </trans-unit>
+      <trans-unit id="manage">
+        <source>manage</source>
+        <target>Zarzadzaj</target>
+      </trans-unit>
+      <trans-unit id="user">
+        <source>user</source>
+        <target>Uzytkownik</target>
+      </trans-unit>
+      <trans-unit id="roles">
+        <source>roles</source>
+        <target>Role</target>
+      </trans-unit>
+      <trans-unit id="users">
+        <source>users</source>
+        <target>Uzytkownicy</target>
+      </trans-unit>
+      <trans-unit id="book.deleted">
+        <source>book.deleted</source>
+        <target>Ksiazka usunieta</target>
+      </trans-unit>
+      <trans-unit id="category.deleted">
+        <source>category.deleted</source>
+        <target>Kategoria usunieta</target>
+      </trans-unit>
+      <trans-unit id="category.warning">
+        <source>category.warning</source>
+        <target>Kategoria zawiera ksiazki, nie moze byc usunieta</target>
+      </trans-unit>
+      <trans-unit id="comment.deleted">
+        <source>comment.deleted</source>
+        <target>Komentarz usuniety</target>
+      </trans-unit>
+      <trans-unit id="no.records">
+        <source>no.records</source>
+        <target>Nie znaleziono rekordow</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

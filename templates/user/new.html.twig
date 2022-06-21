@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{'user.new' |trans}}{% endblock %}
+
+{% block body %}
+<div class="my-page">
+    <h1 class="is-size-3">{{'user.new' |trans}}</h1>
+
+    {{ include('user/_form.html.twig') }}
+</div>
+{% endblock %}

@@ -1,0 +1,44 @@
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a href="{{ url('app_book_index')}}" class="navbar-item">
+        {{ 'books'|trans }}
+      </a>
+
+      <a href="{{ url('app_category_index')}}" class="navbar-item">
+       {{ 'categories'|trans }}
+      </a>
+
+  </div>
+    <div class="navbar-end">
+        <div class="navbar-item">
+        <div class="buttons">
+        {% if app.user %}
+            <a href="{{ url('app_logout')}}" class="button is-light">
+                {{ 'logout'|trans }}
+            </a>
+            <a class="button is-light" href="{{ path('app_user_edit', {'id': app.user.id}) }}">
+                {{ 'edit'|trans }}
+            </a>
+            {% if is_granted('ROLE_ADMIN') %}
+                <a class="button is-light" href="{{ path('app_user_index')}}">
+                {{ 'manage'|trans }} 
+            </a>
+            {% endif %}
+        {% else %}
+            <a href="{{ url('app_login')}}" class="button is-light">
+            {{ 'header.login'|trans }}
+            </a>
+        {% endif %}
+        </div>
+        </div>
+    </div>
+</nav>
