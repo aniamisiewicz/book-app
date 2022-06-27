@@ -1,4 +1,4 @@
-#Instrukcja uruchomienia projektu Book App
+# Instrukcja uruchomienia projektu Book App
 - W pliku .env ustawiamy paramtetry dostępowe do bazy danych,
 - W przypadku braku composera, to w katalogu projektu wykonujemy:
 ```text
